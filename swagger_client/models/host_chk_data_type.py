@@ -39,8 +39,7 @@ class HostChkDataType(object):
         """HostChkDataType - a model defined in Swagger"""  # noqa: E501
         self._cd = None
         self.discriminator = None
-        if cd is not None:
-            self.cd = cd
+        self.cd = cd
 
     @property
     def cd(self):
@@ -60,6 +59,8 @@ class HostChkDataType(object):
         :param cd: The cd of this HostChkDataType.  # noqa: E501
         :type: list[HostCheckType]
         """
+        if cd is None:
+            raise ValueError("Invalid value for `cd`, must not be `None`")  # noqa: E501
 
         self._cd = cd
 

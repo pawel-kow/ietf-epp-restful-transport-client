@@ -1,12 +1,13 @@
-# EppSvcMenuType
+# SecDNSDsDataType
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lang** | **list[str]** |  | 
-**obj_uri** | **list[str]** |  | 
-**svc_extension** | [**EppExtURIType**](EppExtURIType.md) |  | [optional] 
-**version** | [**list[EppVersionType]**](EppVersionType.md) |  | 
+**alg** | **int** |  | 
+**digest** | **str** |  | 
+**digest_type** | **int** |  | 
+**key_data** | [**SecDNSKeyDataType**](SecDNSKeyDataType.md) |  | [optional] 
+**key_tag** | **int** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

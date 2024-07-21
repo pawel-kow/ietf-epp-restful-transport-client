@@ -39,8 +39,7 @@ class EppExtURIType(object):
         """EppExtURIType - a model defined in Swagger"""  # noqa: E501
         self._ext_uri = None
         self.discriminator = None
-        if ext_uri is not None:
-            self.ext_uri = ext_uri
+        self.ext_uri = ext_uri
 
     @property
     def ext_uri(self):
@@ -60,6 +59,8 @@ class EppExtURIType(object):
         :param ext_uri: The ext_uri of this EppExtURIType.  # noqa: E501
         :type: list[str]
         """
+        if ext_uri is None:
+            raise ValueError("Invalid value for `ext_uri`, must not be `None`")  # noqa: E501
 
         self._ext_uri = ext_uri
 

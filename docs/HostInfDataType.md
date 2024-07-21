@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **cr_id** | [**EppcomClIDType**](EppcomClIDType.md) |  | 
 **name** | [**EppcomLabelType**](EppcomLabelType.md) |  | 
 **roid** | [**EppcomRoidType**](EppcomRoidType.md) |  | 
-**status** | [**list[HostStatusType]**](HostStatusType.md) |  | [optional] 
+**status** | [**list[HostStatusType]**](HostStatusType.md) |  | 
 **tr_date** | **datetime** |  | [optional] 
 **up_date** | **datetime** |  | [optional] 
 **up_id** | [**EppcomClIDType**](EppcomClIDType.md) |  | [optional] 

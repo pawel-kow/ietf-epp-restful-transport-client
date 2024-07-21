@@ -73,8 +73,7 @@ class HostInfDataType(object):
         self.cr_id = cr_id
         self.name = name
         self.roid = roid
-        if status is not None:
-            self.status = status
+        self.status = status
         if tr_date is not None:
             self.tr_date = tr_date
         if up_date is not None:
@@ -236,6 +235,8 @@ class HostInfDataType(object):
         :param status: The status of this HostInfDataType.  # noqa: E501
         :type: list[HostStatusType]
         """
+        if status is None:
+            raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
 
         self._status = status
 

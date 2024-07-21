@@ -142,6 +142,7 @@ Class | Method | HTTP request | Description
  - [DomainCreDataType](docs/DomainCreDataType.md)
  - [DomainCreateRequest](docs/DomainCreateRequest.md)
  - [DomainCreateRequestCommand](docs/DomainCreateRequestCommand.md)
+ - [DomainCreateRequestCommandExtension](docs/DomainCreateRequestCommandExtension.md)
  - [DomainCreateType](docs/DomainCreateType.md)
  - [DomainHostAttrType](docs/DomainHostAttrType.md)
  - [DomainHostsType](docs/DomainHostsType.md)
@@ -226,6 +227,14 @@ Class | Method | HTTP request | Description
  - [HostStatusType](docs/HostStatusType.md)
  - [HostStatusValueType](docs/HostStatusValueType.md)
  - [HostUpdateType](docs/HostUpdateType.md)
+ - [SecDNSChgType](docs/SecDNSChgType.md)
+ - [SecDNSDsDataType](docs/SecDNSDsDataType.md)
+ - [SecDNSDsOrKeyType](docs/SecDNSDsOrKeyType.md)
+ - [SecDNSKeyDataType](docs/SecDNSKeyDataType.md)
+ - [SecDNSKeyType](docs/SecDNSKeyType.md)
+ - [SecDNSMaxSigLifeType](docs/SecDNSMaxSigLifeType.md)
+ - [SecDNSRemType](docs/SecDNSRemType.md)
+ - [SecDNSUpdateType](docs/SecDNSUpdateType.md)
 
 ## Documentation For Authorization
 

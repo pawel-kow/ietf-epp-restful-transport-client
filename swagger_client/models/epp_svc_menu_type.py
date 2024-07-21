@@ -48,14 +48,11 @@ class EppSvcMenuType(object):
         self._svc_extension = None
         self._version = None
         self.discriminator = None
-        if lang is not None:
-            self.lang = lang
-        if obj_uri is not None:
-            self.obj_uri = obj_uri
+        self.lang = lang
+        self.obj_uri = obj_uri
         if svc_extension is not None:
             self.svc_extension = svc_extension
-        if version is not None:
-            self.version = version
+        self.version = version
 
     @property
     def lang(self):
@@ -75,6 +72,8 @@ class EppSvcMenuType(object):
         :param lang: The lang of this EppSvcMenuType.  # noqa: E501
         :type: list[str]
         """
+        if lang is None:
+            raise ValueError("Invalid value for `lang`, must not be `None`")  # noqa: E501
 
         self._lang = lang
 
@@ -96,6 +95,8 @@ class EppSvcMenuType(object):
         :param obj_uri: The obj_uri of this EppSvcMenuType.  # noqa: E501
         :type: list[str]
         """
+        if obj_uri is None:
+            raise ValueError("Invalid value for `obj_uri`, must not be `None`")  # noqa: E501
 
         self._obj_uri = obj_uri
 
@@ -138,6 +139,8 @@ class EppSvcMenuType(object):
         :param version: The version of this EppSvcMenuType.  # noqa: E501
         :type: list[EppVersionType]
         """
+        if version is None:
+            raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501
 
         self._version = version
 

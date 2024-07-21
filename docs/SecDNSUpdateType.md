@@ -1,12 +1,12 @@
-# EppSvcMenuType
+# SecDNSUpdateType
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lang** | **list[str]** |  | 
-**obj_uri** | **list[str]** |  | 
-**svc_extension** | [**EppExtURIType**](EppExtURIType.md) |  | [optional] 
-**version** | [**list[EppVersionType]**](EppVersionType.md) |  | 
+**urgent** | **bool** |  | [optional] 
+**add** | [**SecDNSDsOrKeyType**](SecDNSDsOrKeyType.md) |  | [optional] 
+**chg** | [**SecDNSChgType**](SecDNSChgType.md) |  | [optional] 
+**rem** | [**SecDNSRemType**](SecDNSRemType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

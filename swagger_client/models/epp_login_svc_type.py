@@ -42,8 +42,7 @@ class EppLoginSvcType(object):
         self._obj_uri = None
         self._svc_extension = None
         self.discriminator = None
-        if obj_uri is not None:
-            self.obj_uri = obj_uri
+        self.obj_uri = obj_uri
         if svc_extension is not None:
             self.svc_extension = svc_extension
 
@@ -65,6 +64,8 @@ class EppLoginSvcType(object):
         :param obj_uri: The obj_uri of this EppLoginSvcType.  # noqa: E501
         :type: list[str]
         """
+        if obj_uri is None:
+            raise ValueError("Invalid value for `obj_uri`, must not be `None`")  # noqa: E501
 
         self._obj_uri = obj_uri
 

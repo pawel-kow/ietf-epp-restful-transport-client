@@ -1,12 +1,9 @@
-# EppSvcMenuType
+# SecDNSDsOrKeyType
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lang** | **list[str]** |  | 
-**obj_uri** | **list[str]** |  | 
-**svc_extension** | [**EppExtURIType**](EppExtURIType.md) |  | [optional] 
-**version** | [**list[EppVersionType]**](EppVersionType.md) |  | 
+**max_sig_life** | [**SecDNSMaxSigLifeType**](SecDNSMaxSigLifeType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

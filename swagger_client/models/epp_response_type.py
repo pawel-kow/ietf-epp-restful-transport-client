@@ -57,8 +57,7 @@ class EppResponseType(object):
             self.msg_q = msg_q
         if res_data is not None:
             self.res_data = res_data
-        if result is not None:
-            self.result = result
+        self.result = result
         self.tr_id = tr_id
 
     @property
@@ -142,6 +141,8 @@ class EppResponseType(object):
         :param result: The result of this EppResponseType.  # noqa: E501
         :type: list[EppResultType]
         """
+        if result is None:
+            raise ValueError("Invalid value for `result`, must not be `None`")  # noqa: E501
 
         self._result = result
 

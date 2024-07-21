@@ -48,8 +48,7 @@ class EppDcpType(object):
         self.access = access
         if expiry is not None:
             self.expiry = expiry
-        if statement is not None:
-            self.statement = statement
+        self.statement = statement
 
     @property
     def access(self):
@@ -113,6 +112,8 @@ class EppDcpType(object):
         :param statement: The statement of this EppDcpType.  # noqa: E501
         :type: list[EppDcpStatementType]
         """
+        if statement is None:
+            raise ValueError("Invalid value for `statement`, must not be `None`")  # noqa: E501
 
         self._statement = statement
 
